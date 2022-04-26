@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Poke-Card</title>
+</head>
+<body>
+  <div class="main">
+    <h1 class="title">Poke-Card</h1>
+    <p>Enter a number from 1 to 100 and <br/> press the button "I choose you!"</p>
+    <form class="form">
+      <input class="input" type="number" min="1" max="150">
+      <input class="btn-submit" type="submit" value="I choose you!">
+    </form>
+    <p>or press the "Random Pokemon" button <br/> to get a random pokemon</p>
+    <button class="btn-random">Random Pokemon</button>
+  </div>
+  <div class="content-card">
+    <!-- pokemon card render here -->
+  </div>
+  <!-- Template example card -->
+  <template>
+    <div class="card">
+      <div class="first-section">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/150.svg" alt="pokemon image current">
+        <h2 class="pokeName">Mewtow</h3>
+      </div>
+      <div class="second-section">
+        <table>
+          <tr>
+            <th><h3 class="pokeId">ID: </h3></th>
+            <th><h3 class="pokeWeight">Weight: </h3></th>
+            <th><h3 class="pokeHeight">Height: </h3></th>
+          </tr>
+          <tr>
+            <td><span class="id">150</span></td>
+            <td><span class="weight">1220</span></td>
+            <td><span class="height">20</span></td>
+          </tr>
+          <tr>
+            <th><h3 class="pokeHP">HP: </h3></th>
+            <th><h3 class="pokeAttack">Attack: </h3></th>
+            <th><h3 class="pokeDefense">Defense: </h3></th>
+          </tr>
+          <tr>
+            <td><span class="hp">106</span></td>
+            <td><span class="attack">110</span></td>
+            <td><span class="defense">90</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </template>
+  <script src="./js/app.js"></script>
+</body>
+</html>

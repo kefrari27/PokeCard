@@ -1,0 +1,15 @@
+{
+  "name": "poke-card",
+  "version": "1.0.0",
+  "description": "App para obtener informacion de pokemones del 1 al 150",
+  "main": "./js/app.js",
+  "scripts": {
+    "test": "node ./js/app.js"
+  },
+  "keywords": [
+    "pokemon",
+    "API"
+  ],
+  "author": "Kevin Franco Ricardo",
+  "license": "MIT"
+}
